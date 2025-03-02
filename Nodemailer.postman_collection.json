@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "28f07c88-b0b4-4125-b952-1d6c1b990200",
+		"name": "Nodemailer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29494934"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\": \"rivalsolmons@gmail.com\",\r\n    \"subject\": \"Test Email\",\r\n    \"text\": \"This is a test email sent using Nodemailer!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/send-email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"send-email"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
