@@ -8,6 +8,11 @@ const PORT = process.env.PORT || 3000;
 // Middleware to parse JSON
 app.use(express.json());
 
+// ✅ Default route to display a welcome message
+app.get('/', (req, res) => {
+    res.send('Welcome to the Email Service API! Use POST /send-email to send emails.');
+});
+
 // Route to send an email
 app.post('/send-email', async (req, res) => {
     const { to, subject, text } = req.body;
